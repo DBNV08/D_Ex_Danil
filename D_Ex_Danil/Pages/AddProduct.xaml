@@ -1,0 +1,50 @@
+﻿<Window x:Class="D_Ex_Danil.Pages.AddProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:D_Ex_Danil.Pages"
+        mc:Ignorable="d"
+        Title="AddProduct" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <TextBlock Text="Введите название товара:" Height="auto" Width="auto" HorizontalAlignment="Center"/>
+            <TextBox x:Name="Name" Height="auto" Text="{Binding Name}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock Text="Введите путь к фото:" Height="auto" Width="auto" HorizontalAlignment="Center"/>
+            <TextBox x:Name="Iamge" Height="auto" Text="{Binding Image}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" VerticalAlignment="Center">
+            <TextBlock Text="Введите цену:" Height="auto" Width="auto" HorizontalAlignment="Center"/>
+            <TextBox x:Name="Price" Height="auto" PreviewTextInput="Price_PreviewTextInput" Text="{Binding Price}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" VerticalAlignment="Center">
+            <TextBlock Text="Выберите производителя:" Height="auto" Width="auto" HorizontalAlignment="Center"/>
+            <ComboBox x:Name="Producer" Height="30" DisplayMemberPath="Producer1" SelectedItem="{Binding Producer}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" VerticalAlignment="Center">
+            <TextBlock Text="Введите описание:" Height="auto" Width="auto" HorizontalAlignment="Center"/>
+            <TextBox x:Name="Description" Height="auto" Text="{Binding Description}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" VerticalAlignment="Center">
+            <TextBlock Text="Введите скидку:" Height="auto" Width="auto" HorizontalAlignment="Center" PreviewTextInput="TextBlock_PreviewTextInput"/>
+            <TextBox x:Name="Discount" Height="auto" Text="{Binding Discount}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6" VerticalAlignment="Center">
+            <TextBlock Text="Введите количество:" Height="auto" Width="auto" HorizontalAlignment="Center"/>
+            <TextBox x:Name="Count" Height="auto" PreviewTextInput="Count_PreviewTextInput" Text="{Binding Count}" TextChanged="Count_TextChanged"/>
+        </StackPanel>
+        <Button Grid.Row="7" Content="Сохранить" Click="btn_Save_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c8e3a61e1a0c40db8e86d45b1d7100c5" Name="Diagram1">
+        <EntityTypeShape EntityType="DExModel.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DExModel.Pickup_Point" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DExModel.Producer" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DExModel.Product" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DExModel.Role" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DExModel.Status" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DExModel.User" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="DExModel.FK_Order_Pickup_Point" ManuallyRouted="false" />
+        <AssociationConnector Association="DExModel.FK_Order_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DExModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DExModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DExModel.FK_Product_Producer" ManuallyRouted="false" />
+        <AssociationConnector Association="DExModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
