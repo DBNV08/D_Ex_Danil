@@ -81,6 +81,9 @@
     <Compile Include="Pages\EditOrder.xaml.cs">
       <DependentUpon>EditOrder.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ViewOrder.xaml.cs">
+      <DependentUpon>ViewOrder.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pickup_Point.cs">
       <DependentUpon>ModelWheel.tt</DependentUpon>
     </Compile>
@@ -176,6 +179,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\EditOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ViewOrder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
