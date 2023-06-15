@@ -1,5 +1,4 @@
-﻿using D_Ex_Danil.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,22 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace D_Ex_Danil
+namespace D_Ex_Danil.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для WindowForView.xaml
+    /// Логика взаимодействия для ViewProduct.xaml
     /// </summary>
-    public partial class WindowForView : Window
+    public partial class ViewProduct : Window
     {
-        public WindowForView()
+        public ViewProduct()
         {
             InitializeComponent();
-        }
-
-        private void btn_Back_Click(object sender, RoutedEventArgs e)
-        {
-            if (MainFrame.CanGoBack)
-                MainFrame.GoBack();
         }
     }
 }

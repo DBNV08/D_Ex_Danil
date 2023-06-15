@@ -84,6 +84,12 @@
     <Compile Include="Pages\ViewOrder.xaml.cs">
       <DependentUpon>ViewOrder.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ViewProduct.xaml.cs">
+      <DependentUpon>ViewProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewTalon.xaml.cs">
+      <DependentUpon>ViewTalon.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pickup_Point.cs">
       <DependentUpon>ModelWheel.tt</DependentUpon>
     </Compile>
@@ -183,6 +189,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ViewOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ViewProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ViewTalon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
